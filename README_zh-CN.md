@@ -3,7 +3,7 @@
 # idea杀手.skill
 
 <p>
-  <a href="README.md">English</a> · <a href="中文.md"><strong>中文</strong></a>
+  <a href="README.md">English</a> · <a href="README_zh-CN.md"><strong>中文</strong></a>
 </p>
 
 <p>
@@ -283,7 +283,7 @@ market strength
 idea-killer/
 ├── SKILL.md                # skill 本体
 ├── README.md               # English
-├── 中文.md                  # 中文（你正在看）
+├── README_zh-CN.md         # 中文（你正在看）
 ├── LICENSE
 ├── assets/                 # 视觉资产
 │   ├── hero.svg

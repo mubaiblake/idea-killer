@@ -1,15 +1,15 @@
 <svg width="1120" height="520" viewBox="0 0 1120 520" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="1120" height="520" rx="28" fill="#FAF7EF"/>
-  <text x="58" y="78" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="900">浪费的月份，藏在这段差距里。</text>
-  <text x="58" y="120" fill="#4B5563" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20">市场可以很强，但 founder-fit 仍然很弱。</text>
-  <rect x="70" y="178" width="420" height="210" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
-  <text x="102" y="232" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="800">市场原始分</text>
+  <text x="58" y="78" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="900">别只看市场分，看你能不能打穿。</text>
+  <text x="58" y="120" fill="#4B5563" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20">同一个机会，换个人做，胜率可能完全不同。</text>
+  <rect x="70" y="178" width="420" height="220" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="102" y="230" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">市场吸引力</text>
   <text x="102" y="310" fill="#0F766E" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900">7.0</text>
-  <text x="102" y="344" fill="#4B5563" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20">痛点真实。有预算。市场在动。</text>
-  <rect x="630" y="178" width="420" height="210" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
-  <text x="662" y="232" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="800">个人适配分</text>
+  <text x="102" y="350" fill="#4B5563" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20">痛点真 / 有预算 / 趋势热</text>
+  <rect x="630" y="178" width="420" height="220" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="662" y="230" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">你的可执行性</text>
   <text x="662" y="310" fill="#F97316" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900">4.5</text>
-  <text x="662" y="344" fill="#4B5563" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20">依赖一个你不愿使用的渠道。</text>
+  <text x="662" y="350" fill="#4B5563" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20">入口弱 / 不做 BD / 跑道短</text>
   <path d="M510 282 C550 282 568 282 608 282" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
   <path d="M590 262 L612 282 L590 302" stroke="#111827" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

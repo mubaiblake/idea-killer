@@ -3,7 +3,7 @@
 # idea-killer.skill
 
 <p>
-  <a href="README.md"><strong>English</strong></a> · <a href="中文.md">中文</a>
+  <a href="README.md"><strong>English</strong></a> · <a href="README_zh-CN.md">中文</a>
 </p>
 
 <p>
@@ -281,7 +281,7 @@ Your founder profile and decision history stay on your machine. No backend, no t
 idea-killer/
 ├── SKILL.md
 ├── README.md               # English (you are viewing)
-├── 中文.md                  # 中文
+├── README_zh-CN.md         # 中文
 ├── LICENSE
 ├── assets/                 # SVG visuals
 │   ├── *.svg               # English README visuals
