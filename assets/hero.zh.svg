@@ -6,11 +6,12 @@
   <circle cx="94" cy="86" r="8" fill="#F97316"/>
   <circle cx="122" cy="86" r="8" fill="#FACC15"/>
   <circle cx="150" cy="86" r="8" fill="#22C55E"/>
-  <text x="86" y="154" fill="#A7F3D0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="28" font-weight="700">idea-killer.skill</text>
-  <text x="86" y="230" fill="#F7F3EA" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="60" font-weight="900">先别急着</text>
-  <text x="86" y="310" fill="#F97316" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="76" font-weight="900">爱上一个 idea</text>
-  <text x="86" y="386" fill="#F7F3EA" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="46" font-weight="800">先看它是不是你的局。</text>
-  <text x="88" y="448" fill="#CBD5E1" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24">市场再热，也要先过个人适配这关。</text>
+  <text x="86" y="154" fill="#A7F3D0" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="800">idea杀手.skill</text>
+  <text x="86" y="238" fill="#F7F3EA" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="72" font-weight="900">Good Idea</text>
+  <text x="86" y="318" fill="#F97316" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="72" font-weight="900">不代表</text>
+  <text x="86" y="398" fill="#F7F3EA" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="72" font-weight="900">适合你做</text>
+  <text x="88" y="472" fill="#CBD5E1" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="800">别再问 idea 好不好。</text>
+  <text x="88" y="514" fill="#CBD5E1" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="800">先问适不适合你做。</text>
   <rect x="710" y="116" width="450" height="408" rx="22" fill="#F7F3EA"/>
   <text x="746" y="158" fill="#6B7280" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="800">压力测试</text>
   <text x="746" y="194" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="900">跨境卖家 AI 代运营</text>
@@ -24,8 +25,9 @@
   <rect x="746" y="346" width="146" height="16" rx="8" fill="#F97316"/>
   <rect x="746" y="398" width="158" height="56" rx="14" fill="#111827"/>
   <text x="790" y="434" fill="#F7F3EA" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900">PIVOT</text>
-  <text x="930" y="420" fill="#374151" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="700">卡在入口，不卡在概念。</text>
-  <text x="930" y="450" fill="#6B7280" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="16">无卖家渠道 / 不做 BD / 交付太重</text>
+  <text x="930" y="416" fill="#374151" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="700">卡在入口，不卡在概念。</text>
+  <text x="930" y="444" fill="#6B7280" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="16">无卖家渠道 / 不做 BD</text>
+  <text x="930" y="470" fill="#6B7280" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="16">重交付风险高</text>
   <path d="M590 314 C644 314 652 314 696 314" stroke="#A7F3D0" stroke-width="6" stroke-linecap="round"/>
   <path d="M680 292 L702 314 L680 336" stroke="#A7F3D0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
