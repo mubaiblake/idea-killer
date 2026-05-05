@@ -1,0 +1,16 @@
+<svg width="1120" height="520" viewBox="0 0 1120 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1120" height="520" rx="28" fill="#FAF7EF"/>
+  <text x="58" y="78" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900">The gap is where wasted months hide.</text>
+  <text x="58" y="120" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">A market can be strong while the founder-fit is weak.</text>
+  <rect x="70" y="178" width="420" height="210" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="102" y="232" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">Raw market score</text>
+  <text x="102" y="310" fill="#0F766E" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900">7.0</text>
+  <text x="102" y="344" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Real pain. Budget exists. Market moving.</text>
+  <rect x="630" y="178" width="420" height="210" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="662" y="232" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">Founder-fit score</text>
+  <text x="662" y="310" fill="#F97316" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900">4.5</text>
+  <text x="662" y="344" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Requires a channel you refuse to use.</text>
+  <path d="M510 282 C550 282 568 282 608 282" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+  <path d="M590 262 L612 282 L590 302" stroke="#111827" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+

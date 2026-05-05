@@ -1,0 +1,28 @@
+<svg width="1120" height="560" viewBox="0 0 1120 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1120" height="560" rx="28" fill="#111827"/>
+  <text x="58" y="78" fill="#F7F3EA" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900">Not another idea. The same failure pattern.</text>
+  <text x="58" y="120" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="20">idea-killer remembers why previous directions died.</text>
+  <rect x="70" y="178" width="280" height="230" rx="20" fill="#F7F3EA"/>
+  <text x="102" y="232" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Idea A</text>
+  <text x="102" y="276" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="18">AI for lawyers</text>
+  <text x="102" y="318" fill="#F97316" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Killed:</text>
+  <text x="102" y="350" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="17">high-trust vertical</text>
+  <text x="102" y="380" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="17">no industry access</text>
+  <rect x="420" y="178" width="280" height="230" rx="20" fill="#F7F3EA"/>
+  <text x="452" y="232" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Idea B</text>
+  <text x="452" y="276" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="18">AI for clinics</text>
+  <text x="452" y="318" fill="#F97316" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Killed:</text>
+  <text x="452" y="350" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="17">high-trust vertical</text>
+  <text x="452" y="380" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="17">no buyer channel</text>
+  <rect x="770" y="178" width="280" height="230" rx="20" fill="#F7F3EA"/>
+  <text x="802" y="232" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Idea C</text>
+  <text x="802" y="276" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="18">AI for accountants</text>
+  <text x="802" y="318" fill="#F97316" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Warning:</text>
+  <text x="802" y="350" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="17">same structure</text>
+  <text x="802" y="380" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="17">different costume</text>
+  <path d="M350 292 C378 292 392 292 420 292" stroke="#A7F3D0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M700 292 C728 292 742 292 770 292" stroke="#A7F3D0" stroke-width="5" stroke-linecap="round"/>
+  <rect x="262" y="456" width="596" height="54" rx="27" fill="#A7F3D0"/>
+  <text x="310" y="491" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">You are changing verticals, not changing the trap.</text>
+</svg>
+
