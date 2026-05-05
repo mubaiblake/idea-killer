@@ -3,95 +3,100 @@
 # idea-killer.skill
 
 <p>
+  <a href="README.md"><strong>English</strong></a> · <a href="中文.md">中文</a>
+</p>
+
+<p>
   <img src="assets/hero.svg" alt="idea-killer hero" width="100%">
 </p>
 
-> *「Good Idea ≠ 适合你做。」*
+> *A good idea does not mean a good fit for you.*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-Compatible-blueviolet)](https://skills.sh)
-[![Local First](https://img.shields.io/badge/Local--First-Markdown-0f766e)](#本地文件与隐私)
-[![Founder Specific](https://img.shields.io/badge/Founder--Specific-Verdict-111827)](#为什么不是普通-idea-validator)
+[![Local First](https://img.shields.io/badge/Local--First-Markdown-0f766e)](#local-files-and-privacy)
 
-**一个本地 Agent skill。它先用对话把你的画像问清楚，再判断一个创业 idea 到底适不适合你做。**
+**A local Claude Code skill. It profiles you first, then tells you whether a startup idea is `Kill`, `Pivot`, or `Go` — *for you specifically*.**
 
-它不是 idea 评分器，也不是商业计划生成器。  
-它只输出三种结论：`Kill`、`Pivot`、`Go`。
+Not an idea scorer. Not a business plan generator.
 
-> 同一个 idea，对有行业入口的人是 `Go`，对没销售意愿的人可能就是 `Kill`。  
-> 不是市场变了，是 founder 变了。
+> Same idea = `Go` for one founder, `Pivot` for another, `Kill` for a third.  
+> Not because the market changed. Because the founder did.
 
-我自己用它压测了 30 天 —— **10 个 idea，8 Kill，2 Pivot，0 Go**。包括我最看好的那个 8.5 分方向。  
-[👉 看 10 份真实判决](#真实档案作者自己的-10-连判决)
+I used it to pressure-test myself for 30 days after leaving my job.  
+**10 ideas in. 8 Kills. 2 Pivots. 0 Go.** Including the 8.5/10 one I was sure about.  
+[👉 See the 10 real verdicts](#receipts-the-authors-own-10-verdicts)
 
 <br>
 
-[效果示例](#效果示例) · [安装](#安装) · [它判断什么](#它判断什么) · [10 份真实档案](#真实档案作者自己的-10-连判决) · [工作原理](#工作原理) · [本地文件](#本地文件与隐私)
-
-[English](README_EN.md)
+[Demo](#demo) · [Install](#install) · [Why It Exists](#why-it-exists) · [10 Real Verdicts](#receipts-the-authors-own-10-verdicts) · [How It Works](#how-it-works)
 
 </div>
 
 ---
 
-## 效果示例
+## Demo
 
 ```text
-用户  ❯ 用 idea-killer 压测：给跨境电商卖家做 AI 代运营数字员工
+You    ❯ Use idea-killer to pressure-test:
+         AI operator for Amazon sellers (digital employee)
 
-idea-killer ❯ 先确认你的画像：
-              · 你有跨境圈人脉或卖家入口吗？
-              · 你愿意做线下 BD 和长期客服吗？
-              · 你的可投入跑道是几个月？
+idea-killer ❯ First, three founder-profile questions:
+              · Do you have access to seller communities or owners?
+              · Are you willing to do BD and concierge support long-term?
+              · How much runway can you commit?
 
-用户  ❯ 都没有；不愿做 BD；6-8 月。
+You    ❯ None. Not willing. 6-8 months.
 
 ────────────────────────────────────
 
-结论 ❯ Pivot
+Verdict ❯ Pivot
 
-市场原始分:        7.0 / 10   ← 这个方向本身有需求
-适合你做的分:      4.5 / 10   ← 但你的画像是另一回事
+Raw market score:    7.0 / 10   ← The market is real
+Founder-fit score:   4.5 / 10   ← But your profile says otherwise
 
 cap_reason:
-早期验证最依赖卖家信任、真实店铺数据、重交付。
-你刚说的三件事——没入口、不愿 BD、跑道短——
-恰好把这三个验证动作全部锁死了。
+Early validation depends on seller trust, real store data,
+and concierge delivery. The three things you just told me —
+no access, no BD, short runway — lock all three down.
 
-更适合的版本:
-不要卖"AI 员工"。先做一个老板每周愿意看的决策报告：
-选品机会 / 广告异常 / 库存风险 / 竞品动作，
-只保留能让老板立刻改决策的 3 件事。
+Better wedge:
+Don't sell an "AI employee". Build a weekly decision brief
+the seller boss actually wants to read:
+selection opportunities, ad anomalies, inventory risks,
+competitor moves — only the 3 that change a decision.
 
-下一步:
-找 5 个 Amazon 卖家老板，让他们给你看上周真实运营报表。
-没人愿意给你看 → 不是产品问题，是入口问题 → 直接 Kill。
+Next step:
+Find 5 Amazon seller owners. Get them to show you last week's
+real ops report. If none will → it's not a product problem,
+it's an access problem → Kill.
 ```
 
-普通 idea validator 会说"再调研一下"。  
-idea-killer 只回答一个问题：**下一次 2 周冲刺，值不值得投到这个方向上**。
+A normal idea validator says "do more research."  
+idea-killer answers exactly one question:  
+**Is this idea worth your next 2-week sprint?**
 
 ---
 
-## 安装
+## Install
 
 ```bash
 npx skills add mubaiblake/idea-killer
 ```
 
-然后在 Claude Code / Codex / OpenClaw 等支持 skill 的 Agent 里直接说：
+Then say to your agent (Claude Code / Codex / OpenClaw):
 
 ```text
-用 idea-killer 帮我压测：我想做一个面向独立开发者的 landing page 诊断 agent
+Use idea-killer to pressure-test: [your startup idea]
 ```
 
-也可以在还没有具体 idea 时说：
+Or, if you have no specific idea yet:
 
 ```text
-我还没有具体 idea，根据我的画像推荐 3 个更适合我做的创业方向
+I don't have a specific idea. Recommend 3 directions that fit my profile.
 ```
 
-手动安装：
+Manual install:
 
 ```bash
 git clone https://github.com/mubaiblake/idea-killer.git ~/.claude/skills/idea-killer
@@ -99,170 +104,149 @@ git clone https://github.com/mubaiblake/idea-killer.git ~/.claude/skills/idea-ki
 
 ---
 
-## 它判断什么
+## Why It Exists
 
-idea-killer 做的不是 idea validation，是 **founder-idea fit gate**。
+Most idea validators ask:
+
+- Is the market big?
+- Is the pain real?
+- Are there competitors?
+- Can AI solve it?
+
+idea-killer asks the more expensive question:
+
+> **Can *you* actually execute this idea for the next 6 months?**
+
+The same idea can be `Go` for one founder, `Pivot` for another, and `Kill` for a third — *because the founder is different*, not because the market changed.
 
 <p align="center">
   <img src="assets/raw-vs-fit.svg" alt="raw score vs founder fit score" width="92%">
 </p>
 
-普通 idea validator 问：
-
-| 普通问题 | idea-killer 继续追问 |
-|---|---|
-| 市场大不大？ | 这个市场你进得去吗？ |
-| 痛点强不强？ | 你能拿到真实用户和真实数据吗？ |
-| AI 能不能做？ | 早期交付动作你愿意连续做 6 个月吗？ |
-| 竞品多不多？ | 你有什么非共识 wedge？ |
-| 方向看起来好不好？ | 对你是 `Go`，还是只是换皮重复旧坑？ |
-
-**同一个方向，对不同 founder 会得到不同 verdict：**
-
-| Founder 状态 | Verdict |
-|---|---|
-| 有行业入口 + 愿做销售 + 6 个月 runway | `Go` |
-| 市场有需求，但当前切法不匹配渠道 | `Pivot` |
-| 没有入口，还依赖明确不愿做的动作 | `Kill` |
-
 ---
 
-## 真实档案：作者自己的 10 连判决
+## Receipts: The Author's Own 10 Verdicts
 
-我从字节离职后用这个 skill 压测自己想了 30 天的方向。结果如下：
+I left my job at a top tech company and spent 30 days exploring directions. I used idea-killer to pressure-test every one. Here's what came back:
 
-| # | Idea | Verdict | 压测分 | 致命点 |
+| # | Idea | Verdict | Score | Killed by |
 |---|---|---|---|---|
-| 10 | 跨境电商 AI 代运营数字员工 | `Kill` | 3.8 | 没跨境 know-how + 没卖家入口 |
-| 09 | 跨境电商选品 Agent | `Kill` | 3.5 | 同上 + 头部全部已 AI 化 |
-| 08 | 运动 SaaS（教练/俱乐部工作流） | `Pivot` | 6.3 | C 端死路 → B 端有戏但需验证 |
-| 07 | 健身 + AI 视频实时教练 | `Kill` | 2.5 | Keep 卡卡免费同款都没人付费 |
-| 06 | 主动式推荐推送号 v2 | `Kill` | 3.3 | 与 v1 同构换皮 |
-| 05 | AI 主动推送号 | `Kill` | 3.0 | 用户要减法不要加法 |
-| 04 | GTM 案例内容 IP → 推产品 | `Kill` | 3.5 | 双重死路叠加 |
-| 03 | 开源 Memory SDK | `Pivot` | 5.0 | 主线对齐但形态错 |
-| 02 | Pre-session Memory 管控 | `Kill` | 4.0 | 与 #01 结构同构 |
-| 01 | GPT 聊天历史管理工具 | `Kill` | 4.6 | 通用 AI 即将原生覆盖 |
+| 10 | AI operator for cross-border sellers | `Kill` | 3.8 | No vertical know-how + no seller access |
+| 09 | Cross-border product picker agent | `Kill` | 3.5 | Same + every top tool already AI-native |
+| 08 | Sports SaaS (coach/club workflow) | `Pivot` | 6.3 | C-side dead, B-side promising but unproven |
+| 07 | Fitness tracker + real-time AI video coach | `Kill` | 2.5 | Free competitor features didn't get users to pay |
+| 06 | Proactive recommendation channel v2 | `Kill` | 3.3 | Reskinned v1 |
+| 05 | AI proactive push channel | `Kill` | 3.0 | Users want less info, not more |
+| 04 | GTM-stories content IP → product | `Kill` | 3.5 | Two dead-ends stacked |
+| 03 | Open-source Memory SDK | `Pivot` | 5.0 | Right thesis, wrong shape |
+| 02 | Pre-session memory control UI | `Kill` | 4.0 | Same shape as #01 |
+| 01 | GPT chat history manager | `Kill` | 4.6 | General AI will absorb this in 6-12 months |
 
-**[👉 看完整 10 份判决与归类](examples/zh/)**
+**[👉 See full 10 verdicts and structural clustering](examples/en/)**
 
-最戳我的不是 Kill，是它指出来的同一种结构在反复换皮：
+The most useful insight wasn't any single Kill. It was that 10 different-looking ideas mapped to only **4 repeating failure structures**:
 
-- ✗ 外行做高信任/高 know-how 垂直
-- ✗ 软价值订阅 + C 端不付费
-- ✗ 通用 AI 6-12 月内会原生覆盖
-- ✗ 渠道与 founder 画像不匹配
+- ✗ Outsider building high-trust / high-know-how vertical tooling
+- ✗ Soft-value subscriptions, low willingness to pay
+- ✗ General AI will absorb this in 6-12 months
+- ✗ Channel mismatched to founder profile
 
-我以为我有 10 个不同方向，其实我只是在同 4 种死法上换皮 10 次。
+I thought I had 10 different directions. I had been reskinning the same 4 traps 10 times.
 
 ---
 
-## ⭐ Meta-twist：第 10 个 Kill 后才出现的真正价值
+## ⭐ Meta-twist: the actual breakthrough came after Kill #9
 
-如果 skill 只会 Kill idea，它就跟其他 validator 一样：你给一个，它毙一个，你再换一个。
+If the skill only ever killed ideas, it would be the same as every other validator: you give one, it kills it, you give another.
 
-**这个 skill 在第 9 个 Kill 之后停下来了。**
+**This skill stopped after the 9th Kill.**
 
-第 10 个本该是「一人公司 AI 栈 / Claude Code 开发者工具」——但当我打字说「我的技术能力其实在开发者群体里也不强」的瞬间，skill 没有再推第 10 个 idea。
+The 10th was supposed to be "one-person-company AI stack / Claude Code dev tools — at least my engineering background fits there." But the moment I typed "honestly my engineering ability isn't strong relative to other developers," the skill did not produce a 10th idea.
 
-它说：
+It said:
 
-> "你这第三次自我校准让我必须停下来。前面 9 个 idea 全 Kill 不是因为 idea 想得不够多。
+> "Your third self-correction forces me to stop. The 9 previous Kills weren't because your ideas weren't good enough.
 >
-> 是因为我之前对你画像的'非对称优势'本身是光环假设——
-> 落到真竞争层（不是简历层），你在每条赛道都是 0。
+> They were because the 'asymmetric advantages' I was assuming for you were halo assumptions.
+> Drop into the actual competitive layer of each direction — not the resume layer — and you're at zero in every one of them.
 >
-> 这是画像错配的直接产物，不是 idea 供给问题。"
+> This is profile mismatch. It is not an idea-supply problem."
 
-它把作者自己当下看不见的那张表摆出来：
+Then it surfaced the table the founder couldn't see:
 
-| 我之前推荐的方向 | 真实竞争层 | 你在这层的位置 |
+| What I'd been recommending | The actual competitive layer | Founder's position there |
 |---|---|---|
-| 跨境代运营 | 跨境老兵 + 圈内 co-founder | 没经验 → 0 |
-| 健身 AI 教练 | CV/Pose Estimation 专家 + 健身教练 | 不在专业 → 0 |
-| 一人公司开发者工具 | Simon Willison / theo.gg / MCP 早期 contributor | 你刚承认不强 → 0 |
+| Cross-border AI agency | Cross-border veterans + insider co-founder | No experience → 0 |
+| Fitness AI coach | CV / pose-estimation experts + fitness coaches | Not in field → 0 |
+| One-person AI dev tools | Simon Willison / theo.gg / early MCP contributors | Just admitted not strong → 0 |
 | ... | | |
 
-然后它给了三条**根本性选项 ——不是再选一个 idea**：
+Instead of an idea #10, it gave three meta-options — none of them "another idea":
 
-1. **找联合创始人，不再单飞** —— 你的画像配一个领域 know-how + 圈内人脉 + 外向 GTM 的合伙人就解锁高分方向
-2. **降级预期：副业不做 venture** —— ¥5-20k/月 indie 副业概率 30-40%，venture-scale < 10%
-3. **蓄力 6 月：进圈不创业** —— 加入一家垂类创业公司当早期员工/顾问，拿到 know-how + 人脉再 0-1
+1. **Find a co-founder. Stop going solo.** Your profile + a "domain know-how + insider network + outbound GTM" co-founder unlocks the high-score directions.
+2. **Lower expectations: side project, not venture.** Solo profile → 30-40% probability of $1-3k/mo indie SaaS, < 10% for venture-scale. Recalibrate.
+3. **Embed for 6 months.** Join an early team, accumulate know-how + relationships. Patch the profile. Then start.
 
-我后来选了一条几乎没有任何 validator 会推的路：**暂时不选 idea**，用 12-18 个月公开 ship + X 文字异步 + 累积 track record，让方向从反馈里自己浮现。
+I picked the path almost no validator would push: **don't choose a startup direction yet.** Build a public track record for 12-18 months — ship in public, write on X, accumulate IP. Let the direction emerge from what gets traction.
 
-这才是 skill 真正的产品 —— **不是 10 份 Kill 报告，是让系统在你浪费下一个 sprint 之前，告诉你"你在优化错了的变量"**。
+That moment was the actual product. **Not 10 Kill verdicts. The moment the system says "stop optimizing the wrong variable."**
 
-> idea-killer 内置 `diagnostic-mode`：连续 3+ Kill 自动触发，对当前 PROFILE.md 跑一次元复盘。
+> idea-killer ships with `diagnostic-mode`: triggered automatically after 3+ consecutive Kills. It re-runs the meta-check on the current `PROFILE.md` and surfaces the halo gap before another sprint is wasted.
 
-**[👉 看完整元案例对话](examples/zh/case-study-halo-trap.md)**
+**[👉 Read the full case study](examples/en/case-study-halo-trap.md)**
 
 ---
 
-## 为什么不是普通 idea validator
+## Why Not Just Another Idea Validator
 
-### 1. 它先读你，再读 idea
+### 1. It reads YOU before it reads the idea
 
-idea-killer 在评估前会做一段对话，搞清楚以下变量（**不是问卷，是按 idea 的实际执行路径反推该问什么**）：
+Before scoring anything, idea-killer asks the founder-profile questions that **specifically matter for this idea** (not a fixed intake form):
 
-- 你的硬约束：runway、可投入预算、不愿做的事
-- 你的真实渠道：你能直接触达哪些用户、哪些渠道你**愿意持续输出**
-- 你的可执行动作：冷销售？视频出镜？线下 BD？长期客服？
-- 你的历史失败结构：以前是被什么 reason 卡住的
+- Hard constraints: runway, capital, things you refuse to do
+- Real channels: who you can reach, what you'll actually keep posting on
+- Executable actions: cold sales? on-camera demos? long-term support?
+- Past failure structure: what stopped you last time?
 
-这些**不是背景信息**，是直接改变 verdict 的硬门槛。
+These aren't background context. They're hard caps that change the verdict.
 
-### 2. 市场分和适配分始终分开
+### 2. Two scores, always separated
 
-一个 idea 可以市场很好，但不适合你。idea-killer 同时输出：
+- `score_pressure_raw` — how strong the idea is in the market
+- `score_pressure_final` — how strong it is for *you*
+- `cap_reason` — names exactly which constraint of *yours* caused the gap
 
-- `score_pressure_raw`：这个 idea 在市场上本身有多强
-- `score_pressure_final`：这个 idea 对你这个人有多适合
-- `cap_reason`：到底是什么个人约束压低了分数
+The gap is where wasted sprints hide.
 
-**真正有价值的是中间的差距**——浪费下一个 sprint 的钱通常就藏在那里。
-
-### 3. 会识别你反复踩的同一个坑
+### 3. It catches you reskinning the same trap
 
 <p align="center">
   <img src="assets/kill-pattern-memory.svg" alt="kill pattern memory" width="92%">
 </p>
 
-如果你总是把同一种失败结构换个皮，它会用本地历史报告对照出来：
+idea-killer keeps a local `signatures.jsonl` of past kill structures and flags when a new idea is the same skeleton in different clothes.
 
-- 外行做高信任垂直工具
-- 软价值、低付费意愿
-- 依赖你不愿意使用的获客渠道
-- 需要长期内容输出，但你实际不喜欢公开表达
-- 销售周期比你的探索时间更长
-
-这通常比"再给我 10 个新 idea"更值钱。
-
-### 4. 它是 gate，不是商业计划生成器
+### 4. It's a gate, not a plan generator
 
 <p align="center">
   <img src="assets/routing-map.svg" alt="kill pivot go routing map" width="92%">
 </p>
 
-- `Kill`：停止，或只做一个能推翻结论的验证动作
-- `Pivot`：改形，再重新压测
-- `Go`：再进入 `office-hours` / `startup-design` 做问题定义、定位、商业计划
+- `Kill` → stop, or run one falsifying experiment
+- `Pivot` → reshape, rerun
+- `Go` → THEN go to `office-hours` / `startup-design`
 
 ---
 
-## 工作原理
+## How It Works
 
-输入一个 idea 后，idea-killer 做五件事：
-
-| 步骤 | 做什么 | 为什么重要 |
+| Step | Action | Why |
 |---|---|---|
-| 1. Phase 0 画像对齐 | 读已有 PROFILE.md / INDEX.md / 失败结构记录 | 不重新问已经知道的事，避免漂浮假设 |
-| 2. 动态画像追问 | 只问会改变 verdict 的问题（按 idea 反推） | founder-fit 不是泛泛背景 |
-| 3. 历史结构去重 | 比对 signatures.jsonl 里的失败结构 | 防止换皮重做旧失败 |
-| 4. 双分打分 | 市场原始分 vs 个人适配分 | 找出真正的 mismatch |
-| 5. 给路线 | Kill / Pivot / Go + 下一步动作 | 输出必须能执行 |
-
-核心公式很简单：
+| 1. Phase 0 align | Read existing PROFILE.md / INDEX.md / signatures.jsonl | Don't re-ask facts already captured |
+| 2. Dynamic profile | Ask only verdict-changing questions for *this* idea | Founder-fit is not a fixed form |
+| 3. Structural dedup | Compare against past failure signatures | Block re-skinned traps |
+| 4. Dual scoring | Raw market score vs founder-fit score | Surface the real mismatch |
+| 5. Route | Kill / Pivot / Go + next action | Output must be actionable |
 
 ```text
 market strength
@@ -275,58 +259,54 @@ market strength
 
 ---
 
-## 仓库结构
+## Local Files And Privacy
+
+idea-killer writes everything in the current working directory:
+
+```text
+PROFILE.md            # founder portrait
+INDEX.md              # ideas you've run
+signatures.jsonl      # failure-structure fingerprints
+ideas/                # full reports
+direction-research/   # direction recommendations (if you ran them)
+```
+
+Your founder profile and decision history stay on your machine. No backend, no telemetry.
+
+---
+
+## Repo Structure
 
 ```text
 idea-killer/
-├── SKILL.md                # skill 本体
-├── README.md               # 中文（你正在看）
-├── README_EN.md            # English
+├── SKILL.md
+├── README.md               # English (you are viewing)
+├── 中文.md                  # 中文
 ├── LICENSE
-├── assets/                 # 视觉资产
-│   ├── hero.svg
-│   ├── raw-vs-fit.svg
-│   ├── kill-pattern-memory.svg
-│   ├── routing-map.svg
-│   └── social-card-xhs.svg
+├── assets/                 # SVG visuals
+│   ├── *.svg               # English README visuals
+│   └── *.zh.svg            # Chinese README visuals
 └── examples/
-    ├── README.md           # 案例索引 + 失败结构归类
-    ├── sample-{kill,pivot,go}-report.md   # 三种 verdict 模板
-    └── 01..10-*.md         # 作者自己被压测的 10 份真档案
+    ├── sample-{kill,pivot,go}-report.md   # verdict templates
+    └── 01..10-*.md                         # author's own 10 receipts
 ```
 
 ---
 
-## 本地文件与隐私
+## Who It's For
 
-idea-killer 默认把所有判断写在你当前工作目录：
+- Indie hackers tired of building things no one buys
+- AI builders with too many directions and no filter
+- Pre-founders worried they're just getting hyped
+- Serial direction-switchers wanting to spot their own pattern
+- Markdown-first workflow users who want auditable decisions
 
-```text
-PROFILE.md            # 你的 founder 画像
-INDEX.md              # 跑过的 idea 索引
-signatures.jsonl      # 失败结构指纹
-ideas/                # 每个 idea 的完整压测报告
-direction-research/   # 候选方向调研（如果跑过）
-```
+Not for you if:
 
-这些文件留在本地。它们是你的创业判断日志，不是上传到某个黑盒 SaaS 的数据。
-
----
-
-## 适合谁
-
-- 独立开发者：想避免做没人买的工具
-- AI builder：手上方向很多，但不知道该压哪一个
-- 准创业者：担心自己只是被概念兴奋绑架
-- 反复换方向的人：想识别自己的失败结构
-- 本地 Markdown 工作流用户：想留下可审计判断记录
-
-不适合：
-
-- 想要完整商业计划
-- 想被鼓励继续探索每个 idea
-- 不愿意面对 `Kill` 结论
-- 想把 founder context 完全交给黑盒 SaaS
+- You want a full business plan
+- You want encouragement at every step
+- You can't accept a `Kill` verdict
+- You want to give your founder context to a black-box SaaS
 
 ---
 
@@ -338,7 +318,7 @@ MIT
 
 <div align="center">
 
-**idea-killer 不替你创业。**  
-**它只负责在你浪费下一个 sprint 前，问最贵的那个问题。**
+**idea-killer doesn't start your company.**  
+**It just asks the most expensive question before you waste another sprint.**
 
 </div>

@@ -37,7 +37,7 @@ idea-killer 不是模板填空。这里全是**真实跑出来的判决与本地
 
 skill 没有再推第 10 个 idea，而是给了三条根本性选项（找合伙人 / 降级预期做副业 / 蓄力 6 月进圈），让作者首次跳出"再选一个 idea"的循环。
 
-详情：见仓库 README 的 [「meta-twist」section](../../README.md#meta-twist第-10-个-kill-后才出现的真正价值)。
+详情：见仓库中文 README 的 [「meta-twist」section](../../中文.md#meta-twist第-10-个-kill-后才出现的真正价值)。
 
 ## 这 10 份报告里反复出现的 4 种失败结构
 

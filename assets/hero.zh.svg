@@ -1,0 +1,30 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">idea-killer 中文主视觉</title>
+  <desc id="desc">一个 founder-idea fit 压测面板，展示市场原始分、个人适配分和结论。</desc>
+  <rect width="1280" height="640" fill="#F7F3EA"/>
+  <rect x="48" y="44" width="1184" height="552" rx="28" fill="#111827"/>
+  <circle cx="94" cy="86" r="8" fill="#F97316"/>
+  <circle cx="122" cy="86" r="8" fill="#FACC15"/>
+  <circle cx="150" cy="86" r="8" fill="#22C55E"/>
+  <text x="86" y="158" fill="#F7F3EA" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="28">idea杀手.skill</text>
+  <text x="86" y="220" fill="#F7F3EA" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="58" font-weight="800">好 idea？</text>
+  <text x="86" y="292" fill="#F97316" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="78" font-weight="900">也许。</text>
+  <text x="86" y="372" fill="#F7F3EA" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="58" font-weight="800">适合你做？</text>
+  <text x="86" y="434" fill="#A7F3D0" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="700">先压测一下。</text>
+  <rect x="720" y="116" width="420" height="408" rx="22" fill="#F7F3EA"/>
+  <text x="754" y="170" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="800">跨境卖家 AI 代运营</text>
+  <rect x="754" y="204" width="324" height="18" rx="9" fill="#E5E7EB"/>
+  <rect x="754" y="204" width="254" height="18" rx="9" fill="#0F766E"/>
+  <text x="754" y="252" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">市场原始分</text>
+  <text x="1044" y="252" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">7.0</text>
+  <rect x="754" y="278" width="324" height="18" rx="9" fill="#E5E7EB"/>
+  <rect x="754" y="278" width="162" height="18" rx="9" fill="#F97316"/>
+  <text x="754" y="326" fill="#111827" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="700">个人适配分</text>
+  <text x="1044" y="326" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">4.5</text>
+  <rect x="754" y="360" width="198" height="58" rx="14" fill="#111827"/>
+  <text x="786" y="397" fill="#F7F3EA" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900">PIVOT</text>
+  <text x="754" y="462" fill="#374151" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18">被这些因素压低：信任销售、</text>
+  <text x="754" y="492" fill="#374151" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="18">卖家数据入口、重交付。</text>
+  <path d="M601 308 C652 308 661 308 704 308" stroke="#A7F3D0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M688 286 L710 308 L688 330" stroke="#A7F3D0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

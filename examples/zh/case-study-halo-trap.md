@@ -67,7 +67,7 @@ skill 真正的产品不是 10 份 Kill 报告。是**让系统在你浪费下�
 - 用 12-18 个月公开 ship + X 文字异步 + 累积 track record
 - 让方向从拿到反馈的事情里自己浮现出来
 
-这条策略现在写在仓库 README 的 [meta-twist section](../../README.md#meta-twist第-10-个-kill-后才出现的真正价值)。
+这条策略现在写在仓库中文 README 的 [meta-twist section](../../中文.md#meta-twist第-10-个-kill-后才出现的真正价值)。
 也是这个 skill 公开发布的真正动机：避免其他 founder 在错的变量上浪费 6 个月。
 
 ---
